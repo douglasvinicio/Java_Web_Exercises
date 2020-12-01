@@ -1,0 +1,23 @@
+<!--  
+
+Split Function
+
+The fn:split() function splits a string into an array of substrings based on delimiter
+
+Syntax : String[] split(String data, String delimiter)
+
+Examples : <c:set var="data" value="Singapore*Tokyo*Mumbai*London" />
+			<c:set var="citiesArray" value="${fn:split(data, ',')}" />
+			
+			
+Join Functions
+
+It goes the other way around
+The fn:join() function concatenates a String array into single String based on a delimiter.
+String join(String[] data, String delimiter)
+
+Example : <c:set var="fun" value="${fn:join(citiesArray, '*')}" />
+
+Result of joining : ${fun} 
+Result of joining : Singapore*Tokyo*Mumbai*London 
+ -->
